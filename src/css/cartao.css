@@ -53,7 +53,7 @@
     border-bottom: 1px solid #6B727A;
 }
 
-.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-habilidades {
+.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades {
     padding: 0 10px;
     width: 180px;
 }

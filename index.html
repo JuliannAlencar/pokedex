@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex - Meu primeito projeto!</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
-    <link rel="stylesheet" href="src/css/cartao.css">
-    <link rel="stylesheet" href="src/css/listagem.css">
-    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/cartao.css" />
+    <link rel="stylesheet" href="src/css/listagem.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
 </head>
 <body>
     <main>
         <div class="pokedex">
             <div class="cartoes-pokemon">
-                <div class="cartao-pokemon aberto tipo-eletrico">
+                <div class="cartao-pokemon tipo-eletrico aberto" id="cartao-pikachu">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Pikachu</h2>
@@ -28,7 +28,7 @@
                         <span class="tipo">eletrico</span>
 
                         <div class="cartao-imagem">
-                            <img src="src/imagens/pikachu.png" alt="Imagem do pikachu">
+                            <img src="src/imagens/pikachu.png" alt="pikachu" />
                         </div>
                     </div>
 
@@ -56,45 +56,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
-                    <div class="cartao-topo">
-                        <div class="detalhes">
-                            <h2 class="nome">Bulbasaur</h2>
-                            <span>#001</span>
-                        </div>
-                        
-                        <span class="tipo">grama</span>
-
-                        <div class="cartao-imagem">
-                            <img src="src/imagens/bulbasaur.png" alt="Imagem do bulbasaur">
-                        </div>
-                    </div>
-
-                    <div class="cartao-informacoes">
-                        <div class="status">
-                            <h3>Status</h3>
-
-                            <ul>
-                                <li>HP: 85</li>
-                                <li>Ataque: 110</li>
-                                <li>Defesa: 110</li>
-                                <li>Velocidade: 80</li>
-                                <li>Total: 385</li>
-                            </ul>
-                        </div>
-
-                        <div class="habilidades">
-                            <h3>Habilidades</h3>
-
-                            <ul>
-                                <li>Semente Sanguessuga</li>
-                                <li>Chicote de Vinha</li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-fogo" id="cartao-charmander">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Charmander</h2>
@@ -104,7 +66,7 @@
                         <span class="tipo">fogo</span>
 
                         <div class="cartao-imagem">
-                            <img src="src/imagens/charmander.png" alt="Imagem do charmander">
+                            <img src="src/imagens/charmander.png" alt="charmander" />
                         </div>
                     </div>
 
@@ -129,10 +91,10 @@
                                 <li>Cortina de Fumaça</li>
                             </ul>
                         </div>
-                    </div>                 
+                    </div> 
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-agua" id="cartao-gyarados">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Gyarados</h2>
@@ -142,7 +104,7 @@
                         <span class="tipo">agua</span>
 
                         <div class="cartao-imagem">
-                            <img src="src/imagens/gyarados.png" alt="Imagem do gyarados">
+                            <img src="src/imagens/gyarados.png" alt="gyarados" />
                         </div>
                     </div>
 
@@ -170,7 +132,7 @@
                     </div>                    
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-trevas" id="cartao-gengar">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Gengar</h2>
@@ -180,7 +142,7 @@
                         <span class="tipo">trevas</span>
 
                         <div class="cartao-imagem">
-                            <img src="src/imagens/gengar.png" alt="Imagem do gengar">
+                            <img src="src/imagens/gengar.png" alt="gengar" />
                         </div>
                     </div>
 
@@ -208,7 +170,45 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-grama" id="cartao-bulbasaur">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Bulbasaur</h2>
+                            <span>#001</span>
+                        </div>
+                        
+                        <span class="tipo">grama</span>
+
+                        <div class="cartao-imagem">
+                            <img src="src/imagens/bulbasaur.png" alt="bulbasaur" />
+                        </div>
+                    </div>
+
+                    <div class="cartao-informacoes">
+                        <div class="status">
+                            <h3>Status</h3>
+
+                            <ul>
+                                <li>HP: 85</li>
+                                <li>Ataque: 110</li>
+                                <li>Defesa: 110</li>
+                                <li>Velocidade: 80</li>
+                                <li>Total: 385</li>
+                            </ul>
+                        </div>
+
+                        <div class="habilidades">
+                            <h3>Habilidades</h3>
+
+                            <ul>
+                                <li>Semente Sanguessuga</li>
+                                <li>Chicote de Vinha</li>
+                            </ul>
+                        </div>
+                    </div>                 
+                </div>
+             
+                <div class="cartao-pokemon tipo-dragao" id="cartao-dragonite">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Dragonite</h2>
@@ -218,7 +218,7 @@
                         <span class="tipo">dragao</span>
 
                         <div class="cartao-imagem">
-                            <img src="src/imagens/dragonite.png" alt="Imagem do dragonite">
+                            <img src="src/imagens/dragonite.png" alt="dragonite" />
                         </div>
                     </div>
 
@@ -249,35 +249,35 @@
 
             <nav class="listagem">
                 <ul>
-                    <li class="pokemon ativo">
-                        <img src="src/imagens/cabeca-pikachu.png" alt="cabeça do pikachu">
+                    <li class="pokemon ativo" id="pikachu">
+                        <img src="src/imagens/cabeca-pikachu.png" alt="cabeça do pikachu" />
                         <span>Pikachu</span>
                     </li>
-                    <li class="pokemon">
-                        <img src="src/imagens/cabeca-bulbasaur.png" alt="cabeça do bulbasaur">
+                    <li class="pokemon" id="bulbasaur">
+                        <img src="src/imagens/cabeca-bulbasaur.png" alt="cabeça do bulbasaur" />
                         <span>Bulbasaur</span>
                     </li>
-                    <li class="pokemon">
-                        <img src="src/imagens/cabeca-charmander.png" alt="cabeça do charmander">
+                    <li class="pokemon" id="charmander">
+                        <img src="src/imagens/cabeca-charmander.png" alt="cabeça do charmander" />
                         <span>Charmander</span>
                     </li>
-                    <li class="pokemon">
-                        <img src="src/imagens/cabeca-gyarados.png" alt="cabeça do gyarados">
+                    <li class="pokemon" id="gyarados">
+                        <img src="src/imagens/cabeca-gyarados.png" alt="cabeça do gyarados" />
                         <span>Gyarados</span>
                     </li>
-                    <li class="pokemon">
-                        <img src="src/imagens/cabeca-gengar.png" alt="cabeça do gengar">
+                    <li class="pokemon" id="gengar">
+                        <img src="src/imagens/cabeca-gengar.png" alt="cabeça do gengar" />
                         <span>Gengar</span>
                     </li>
-                    <li class="pokemon">
-                        <img src="src/imagens/cabeca-dragonite.png" alt="cabeça do dragonite">
+                    <li class="pokemon" id="dragonite">
+                        <img src="src/imagens/cabeca-dragonite.png" alt="cabeça do dragonite" />
                         <span>Dragonite</span>
                     </li>
                 </ul>
-
             </nav>
         </div>
     </main>
-</body>
 
+    <script src="src/js/index.js"></script>
+</body>
 </html>
